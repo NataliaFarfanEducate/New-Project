@@ -19,7 +19,7 @@ public class Persona {
     @Column
     private Date persona_date;
     @Column
-    private int persona_documento;
+    private Long persona_documento;
 
     public int getPersona_id() {
         return persona_id;
@@ -52,21 +52,12 @@ public class Persona {
     public void setPersona_date(Date persona_date) {
         this.persona_date = persona_date;
     }
-    
-    /*public Date getPersona_date() {
-        return persona_date;
-    }
 
-    public Date setPersona_date(Date persona_date) {
-        this.persona_date = persona_date;
-        return null;
-    }*/
-
-    public int getPersona_documento() {
+    public Long getPersona_documento() {
         return persona_documento;
     }
 
-    public void setPersona_documento(int persona_documento) {
+    public void setPersona_documento(Long persona_documento) {
         this.persona_documento = persona_documento;
     }
 }
