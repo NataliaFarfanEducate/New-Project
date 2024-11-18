@@ -23,7 +23,7 @@ public class SolicitudRest {
     @Autowired
     SolicitudService sservice;
 
-    // SolicitudRest
+    // SolicitudRest holiii prueba de git
     @GetMapping("/solicitud")
     public List<Solicitud> listarS() {
         return sservice.listar();

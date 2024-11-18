@@ -17,9 +17,12 @@ public class Persona {
     @Column
     private String persona_apellido;
     @Column
+    private int id_tp;
+    @Column
     private Date persona_date;
     @Column
     private Long persona_documento;
+
 
     public int getPersona_id() {
         return persona_id;
@@ -44,6 +47,14 @@ public class Persona {
     public void setPersona_apellido(String persona_apellido) {
         this.persona_apellido = persona_apellido;
     }
+
+    public int getId_tp() {
+        return id_tp;
+    }
+
+    public void setId_tp(int id_tp) {
+        this.id_tp = id_tp;
+    }
     
     public Date getPersona_date() {
         return persona_date;
@@ -60,4 +71,6 @@ public class Persona {
     public void setPersona_documento(Long persona_documento) {
         this.persona_documento = persona_documento;
     }
+
+
 }

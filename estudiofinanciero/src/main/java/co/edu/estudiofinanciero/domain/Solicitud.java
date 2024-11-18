@@ -24,6 +24,10 @@ public class Solicitud {
     private String solicitud_tipo;
     @Column
     private String solicitud_estado;
+    @Column
+    private int persona_id;
+    @Column
+    private int producto_id;
 
     public int getSolicitud_id() {
         return solicitud_id;
@@ -64,4 +68,23 @@ public class Solicitud {
     public void setSolicitud_estado(String solicitud_estado) {
         this.solicitud_estado = solicitud_estado;
     }
+
+    public int getPersona_id() {
+        return persona_id;
+    }
+
+    public void setPersona_id(int persona_id) {
+        this.persona_id = persona_id;
+    }
+
+    public int getProducto_id() {
+        return producto_id;
+    }
+
+    public void setProducto_id(int producto_id) {
+        this.producto_id = producto_id;
+    }
+
+
+    
 }
